@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Fade } from "react-awesome-reveal";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, FaGitAlt, FaPython, FaJava, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, FaGitAlt, FaPython, FaJava, FaGithub, FaNodeJs} from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { MdPhonelink, MdForum } from "react-icons/md";
 
@@ -11,6 +11,7 @@ const skillsData = [
   { name: "JavaScript", icon: <FaJsSquare color="#f7df1e" />, color: "#fffbe1" },
   { name: "React", icon: <FaReact color="#61dafb" />, color: "#e7fbfc" },
   { name: "Bootstrap", icon: <FaBootstrap color="#563d7c" />, color: "#f4e5ff" },
+  { name: "Node.js", icon: <FaNodeJs color="#339933" />, color: "#e6f4ea" },
   { name: "Git", icon: <FaGitAlt color="#f1502f" />, color: "#fff0ed" },
   { name: "GitHub", icon: <FaGithub color="#24292e" />, color: "#e8eaf0" },
   { name: "Python", icon: <FaPython color="#3776AB" />, color: "#edf6ff" },

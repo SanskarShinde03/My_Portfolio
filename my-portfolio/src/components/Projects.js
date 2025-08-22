@@ -2,15 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { Fade } from "react-awesome-reveal";
 import project1 from "../assets/project1.png";
-
+import projectNumberPlate from "../assets/projectNumberPlate.png"; // Replace with your actual image path
 
 const projects = [
-   {
+  {
     name: "Car Rental",
-    desc: "An intuitive car rental platform enabling users to easily browse, book, and manage vehicle rentals online.",
-    img: project1
-  }
-  // Add more projects as needed!
+    desc: "An intuitive car rental platform enabling users to easily browse, book, and manage vehicle rentals online. Designed and implemented for simulated 200+ users, with optimized transaction workflows resulting in a 25% faster booking process.",
+    img: project1,
+  },
+  {
+    name: "Smart Number Plate Detection System",
+    desc: `Designed and developed an intelligent vehicle entry management solution leveraging computer vision and machine learning techniques. This system 
+    accurately detects and reads number plates in real-time from live video feeds, automating gate access control for parking lots, toll booths, and 
+    secured facilities. Features include instant alerts for unauthorized vehicles, seamless database integration for logging entries, and a user-friendly 
+    interface for administrators. The project significantly improves security, reduces manual workloads, and enhances operational efficiency.`,
+    img: projectNumberPlate,
+  },
 ];
 
 const Section = styled.section`
@@ -53,22 +60,24 @@ function Projects() {
   return (
     <Fade direction="up" cascade>
       <Section id="projects">
-        <h2 style={{
-          textAlign:"center",
-          marginBottom:"1.2em",
-          fontSize:"2.15rem",
-          background:"linear-gradient(90deg, #ffc658 0%, #28d8ce 100%)",
-          WebkitBackgroundClip:"text",
-          WebkitTextFillColor:"transparent"
-        }}>
+        <h2
+          style={{
+            textAlign: "center",
+            marginBottom: "1.2em",
+            fontSize: "2.15rem",
+            background: "linear-gradient(90deg, #ffc658 0%, #28d8ce 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
           Projects
         </h2>
         {projects.map((p, i) => (
           <Card key={i}>
             <Img src={p.img} alt={p.name} />
             <div>
-              <h3 style={{marginBottom:"0.5em"}}>{p.name}</h3>
-              <p style={{fontSize:'1em'}}>{p.desc}</p>
+              <h3 style={{ marginBottom: "0.5em" }}>{p.name}</h3>
+              <p style={{ fontSize: "1em" }}>{p.desc}</p>
             </div>
           </Card>
         ))}

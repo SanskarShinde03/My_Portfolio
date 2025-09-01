@@ -4,6 +4,11 @@ import { Fade } from "react-awesome-reveal";
 import project1 from "../assets/project1.png";
 import projectNumberPlate from "../assets/projectNumberPlate.png"; // Replace with your actual image path
 
+// Add your project screenshots here
+import todoScreenshot from "../assets/todo-screenshot.png"; // Replace with your To-Do List screenshot path
+import ticTacToeScreenshot from "../assets/tic-tac-toe-screenshot.png"; // Replace with your Tic Tac Toe screenshot path
+import rpsScreenshot from "../assets/rps-screenshot.png"; // Replace with your Rock Paper Scissors screenshot
+
 const projects = [
   {
     name: "Car Rental",
@@ -12,11 +17,23 @@ const projects = [
   },
   {
     name: "Smart Number Plate Detection System",
-    desc: `Designed and developed an intelligent vehicle entry management solution leveraging computer vision and machine learning techniques. This system 
-    accurately detects and reads number plates in real-time from live video feeds, automating gate access control for parking lots, toll booths, and 
-    secured facilities. Features include instant alerts for unauthorized vehicles, seamless database integration for logging entries, and a user-friendly 
-    interface for administrators. The project significantly improves security, reduces manual workloads, and enhances operational efficiency.`,
+    desc: `Designed and developed an intelligent vehicle entry management solution leveraging computer vision and machine learning techniques. This system accurately detects and reads number plates in real-time from live video feeds, automating gate access control for parking lots, toll booths, and secured facilities. Features include instant alerts for unauthorized vehicles, seamless database integration for logging entries, and a user-friendly interface for administrators. The project significantly improves security, reduces manual workloads, and enhances operational efficiency.`,
     img: projectNumberPlate,
+  },
+  {
+    name: "React To-Do List",
+    desc: "A simple and elegant To-Do List app built with React and Bootstrap. Features task creation, editing, deletion, and completion toggling with responsive design.",
+    img: todoScreenshot,
+  },
+  {
+    name: "Tic Tac Toe Game",
+    desc: "A Tic Tac Toe game implemented with React. Interactive game board supporting two players with winner detection and replay functionality.",
+    img: ticTacToeScreenshot,
+  },
+  {
+    name: "Rock Paper Scissors",
+    desc: "A fun Rock Paper Scissors game created with React, featuring scoring, sound effects, and clean UI design.",
+    img: rpsScreenshot,
   },
 ];
 
